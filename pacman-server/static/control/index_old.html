@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Pacman controller</title>
+</head>
+<body>
+	<div class="container" id="choose">
+		<p class="top" onclick="joystick()">Use touch controls</p>
+		<p class="bottom" onclick="window.location.assign('http://localhost:8080/tilt.html')">Use tilt controls<br/><span class="small">(requires rotationlock)</span></p>
+	</div>
+	<button onclick="test()">alkjflkasjflkasdf</button>
+</body>
+<script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="joystick.js"></script>
+<script>
+	function getCookie(cname) {
+	    var name = cname + "=";
+	    var ca = document.cookie.split(';');
+	    for(var i=0; i<ca.length; i++) {
+	        var c = ca[i];
+	        while (c.charAt(0)==' ') c = c.substring(1);
+	        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+	    }
+	    return "";
+	}
+
+	var cookie = getCookie('pac_id');
+  	var socket = io(window.location.host+'/control');
+
+	function test(){
+		socket.emit('controler', { pac_id: cookie });
+	}
+
+	function joystick(){
+		$("#choose").hide();
+		var joystick = new VirtualJoystick({
+    						mouseSupport: true,
+							stationaryBase: true,
+							baseX: screen.width/2,
+							baseY: screen.height/2,
+                   });
+		setInterval(function(){
+					if( joystick.right() ){
+						console.log("right");   
+					}else
+					if( joystick.left() ){
+						console.log("left");       
+					}else
+					if( joystick.up() ){
+						console.log("up");          
+					}else
+					if( joystick.down() ){
+						console.log("down");
+					}
+				}, 1/30 * 1000);
+	}
+  
+</script>
+</html>

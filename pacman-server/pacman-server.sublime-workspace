@@ -1,0 +1,1354 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"getp",
+				"getp1Name"
+			],
+			[
+				"pla",
+				"player1"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"sib",
+				"visible〔function〕"
+			],
+			[
+				"bor",
+				"border-color"
+			],
+			[
+				"gam",
+				"gamma"
+			],
+			[
+				"pl",
+				"playlist"
+			],
+			[
+				"play",
+				"playerlist"
+			],
+			[
+				"log",
+				"logger"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"up",
+				"updatescreen"
+			],
+			[
+				"player",
+				"playerlist"
+			],
+			[
+				"in",
+				"indexOf"
+			],
+			[
+				"pr",
+				"proto	Prototype"
+			],
+			[
+				"connec",
+				"connected"
+			],
+			[
+				"send",
+				"sendname"
+			],
+			[
+				"s",
+				"socket"
+			],
+			[
+				"pa",
+				"pac_id"
+			],
+			[
+				"re",
+				"req"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"lefin",
+				"leftinfoul"
+			],
+			[
+				"leftinfo",
+				"leftinfoul"
+			],
+			[
+				"pal",
+				"playerslist"
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"lo",
+				"logger"
+			],
+			[
+				"is",
+				"isplayer1"
+			],
+			[
+				"screen",
+				"screensocket"
+			],
+			[
+				"ri",
+				"rightDown"
+			],
+			[
+				"scr",
+				"screensocket"
+			],
+			[
+				"sc",
+				"screensocket"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"p",
+				"playlist"
+			],
+			[
+				"ha",
+				"hagelsteen"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"var",
+				"var_dump〔function〕"
+			],
+			[
+				"resl",
+				"result"
+			],
+			[
+				"tu",
+				"turntodegree"
+			],
+			[
+				"Send",
+				"sendString"
+			],
+			[
+				"R",
+				"RP6ADDRES"
+			],
+			[
+				"ver",
+				"verzenden"
+			],
+			[
+				"write",
+				"writeString"
+			],
+			[
+				"w",
+				"writeString"
+			],
+			[
+				"rp",
+				"RP6ADDRES"
+			],
+			[
+				"bumper",
+				"bumper_timer"
+			],
+			[
+				"getBum",
+				"getBumperLeft"
+			],
+			[
+				"set",
+				"setMotorSpeed"
+			],
+			[
+				"init",
+				"initBumpers"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"add",
+				"addClass〔function〕"
+			],
+			[
+				"hea",
+				"header"
+			],
+			[
+				"_",
+				"$_POST〔variable〕"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"border",
+				"border-top: 〔property〕"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"bl",
+				"black"
+			],
+			[
+				"t",
+				"type	Attr"
+			],
+			[
+				"echo",
+				"echo	echo \"…\""
+			],
+			[
+				"ar",
+				"arguments〔variable〕"
+			],
+			[
+				"udr",
+				"UDR0"
+			],
+			[
+				"ucs",
+				"UCSR0A"
+			],
+			[
+				"si",
+				"size〔function〕"
+			],
+			[
+				"remote",
+				"remote_commands"
+			],
+			[
+				"server",
+				"$servername〔variable〕"
+			],
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"va",
+				"$value〔variable〕"
+			],
+			[
+				"print",
+				"print_r〔function〕"
+			],
+			[
+				"wr",
+				"writeChar"
+			],
+			[
+				"POR",
+				"PORTD"
+			],
+			[
+				"pov",
+				"POVDisplay"
+			],
+			[
+				"po",
+				"POVDisplayD"
+			],
+			[
+				"de",
+				"def	Function"
+			],
+			[
+				"par",
+				"parsed〔variable〕"
+			],
+			[
+				"glo",
+				"global〔keyword〕"
+			],
+			[
+				"pin",
+				"$ping〔variable〕"
+			],
+			[
+				"if",
+				"if	if …"
+			],
+			[
+				"qu",
+				"querytime"
+			],
+			[
+				"que",
+				"$querytime〔variable〕"
+			],
+			[
+				"tim",
+				"$timestamp〔variable〕"
+			],
+			[
+				"prin",
+				"print_r〔function〕"
+			],
+			[
+				"ser",
+				"$server〔variable〕"
+			],
+			[
+				"rel",
+				"relatedTarget"
+			],
+			[
+				"per",
+				"$permdata〔variable〕"
+			],
+			[
+				"crea",
+				"createnew"
+			],
+			[
+				"button",
+				"button_create"
+			],
+			[
+				"setst",
+				"stylesheet"
+			],
+			[
+				"data",
+				"$dataperms〔variable〕"
+			],
+			[
+				"ht",
+				"htmlspecialchars_decode"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"dat",
+				"$dataperms〔variable〕"
+			],
+			[
+				"json",
+				"json_encode〔function〕"
+			],
+			[
+				"row",
+				"$rowdata〔variable〕"
+			],
+			[
+				"or",
+				"original"
+			],
+			[
+				"pos",
+				"positions"
+			],
+			[
+				"poslist",
+				"$posliststring〔variable〕"
+			],
+			[
+				"ty",
+				"type=\"checkbox"
+			],
+			[
+				"ch",
+				"child〔function〕"
+			],
+			[
+				"filter",
+				"filterdata"
+			],
+			[
+				"che",
+				"checked〔function〕"
+			],
+			[
+				"chec",
+				"checked"
+			],
+			[
+				"subr",
+				"substr"
+			],
+			[
+				"reg",
+				"regex"
+			],
+			[
+				"posi",
+				"positions"
+			],
+			[
+				"fil",
+				"filterdata"
+			],
+			[
+				"ra",
+				"$ranks〔variable〕"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"fi",
+				"first〔function〕"
+			],
+			[
+				"nee",
+				"needperms"
+			],
+			[
+				"resu",
+				"result_row"
+			],
+			[
+				"ani",
+				"animation_ghost_1〔variable〕"
+			],
+			[
+				"gh",
+				"ghostImage"
+			],
+			[
+				"pac",
+				"pac_id〔argument〕"
+			],
+			[
+				"client",
+				"clientt"
+			],
+			[
+				"debug",
+				"debugLevel"
+			],
+			[
+				"get",
+				"getCookie"
+			],
+			[
+				"cli",
+				"clients〔variable〕"
+			],
+			[
+				"coo",
+				"cookies"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"margin-",
+				"margin-left: 〔property〕"
+			],
+			[
+				"us",
+				"$userid〔variable〕"
+			],
+			[
+				"file_",
+				"file_put_contents〔function〕"
+			],
+			[
+				"userd",
+				"$userdata〔variable〕"
+			],
+			[
+				"sr",
+				"src=〔attribute〕"
+			],
+			[
+				"ac",
+				"action	Attr"
+			],
+			[
+				"h",
+				"h3	Tag"
+			],
+			[
+				"lin",
+				"link"
+			],
+			[
+				"wd",
+				"width"
+			],
+			[
+				"wid",
+				"width: 〔property〕"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 7329,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/tilt.html",
+			"settings":
+			{
+				"buffer_size": 3390,
+				"line_ending": "Unix",
+				"name": "tilt.html"
+			}
+		},
+		{
+			"file": "static/screen/index.html",
+			"settings":
+			{
+				"buffer_size": 18934,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/client.ejs",
+			"settings":
+			{
+				"buffer_size": 7264,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/control/style.css",
+			"settings":
+			{
+				"buffer_size": 1672,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/playlist.js",
+			"settings":
+			{
+				"buffer_size": 5229,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/screen/js/Ghost.js",
+			"settings":
+			{
+				"buffer_size": 2097,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 151.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"avr",
+				"AVR: Create/Update Project"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"av",
+				"AVR: Create/Update Project"
+			],
+			[
+				"ins",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"beat",
+				"PHP CodeBeautifier"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: sea",
+				"Package Control: Discover Packages"
+			],
+			[
+				"packagecon ",
+				"Package Control: Install Package"
+			],
+			[
+				"paack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"linter ",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"packetin",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 340.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"clear",
+			"import urllib2,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Tom/Dropbox/pacman-server",
+		"/Users/Tom/Dropbox/pacman-server/static",
+		"/Users/Tom/Dropbox/pacman-server/static/control",
+		"/Users/Tom/Dropbox/pacman-server/views"
+	],
+	"file_history":
+	[
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/E75211D7-7512-458F-B7A7-EC854D3ABE4B/index.php",
+		"/Users/Tom/Dropbox/pacman-server/client/player.js",
+		"/D/Users/Tom/Desktop/pacman-server/static/screen/css/pacman.css",
+		"/D/Users/Tom/Desktop/pacman-server/static/screen/js/Player.js",
+		"/D/Users/Tom/Desktop/pacman-server/static/control/index.html",
+		"/D/Users/Tom/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/Users/Tom/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/Users/Tom/Desktop/pacman-server/index.js",
+		"/D/Users/Tom/Desktop/pacman-server/static/screen/pacman.js",
+		"/D/Users/Tom/Desktop/pacman-server/static/screen/index.html",
+		"/D/Users/Tom/Downloads/CSS & JavaScript PACMAN.html",
+		"/D/Users/Tom/Desktop/pacman-server/static/index.html",
+		"/D/Users/Tom/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/NodeJS/repl.js",
+		"/D/Users/Tom/AppData/Roaming/Sublime Text 3/Packages/User/nodejs.sublime-build",
+		"/Users/Tom/Downloads/arduino.c",
+		"/Users/Tom/Downloads/rp6.c",
+		"/Users/Tom/dev/web dev/pacman-server/static/screen/BD_Cartoon_Shout-webfont.ttf",
+		"/Users/Tom/dev/web dev/pacman-server/client/playlist.js",
+		"/Users/Tom/dev/web dev/pacman-server/server/game.js",
+		"/Users/Tom/dev/web dev/pacman-server/static/control/index.html",
+		"/Users/Tom/dev/web dev/pacman-server/static/screen/index.html",
+		"/Users/Tom/dev/web dev/pacman-server/static/screen/js/game.js",
+		"/Users/Tom/dev/web dev/pacman-server/views/client.ejs",
+		"/Users/Tom/dev/web dev/pacman-server/index.js",
+		"/Users/Tom/Library/Application Support/Sublime Text 3/Packages/User/nodejs.sublime-build",
+		"/Users/Tom/temp/temp.py",
+		"/Users/Tom/Documents/My Games/Path of Exile/production_Config.ini",
+		"/Users/Tom/dev/test.py",
+		"/Users/Tom/Downloads/HagelSteenVermoeden_slides.slides.html",
+		"/Users/Tom/Downloads/index.html",
+		"/Users/Tom/dev/python/minecraftserver crapper/stuff.txt",
+		"/Users/Tom/dev/python/minecraftserver crapper/minecraft-server-list.py",
+		"/Users/Tom/dev/python/minecraftserver crapper/scrap.py",
+		"/Users/Tom/Documents/Rozekrans Computer Service/belasting/opdracht6/pwm.c",
+		"/Users/Tom/dev/python/minecraftserver crapper/list.txt",
+		"/Users/Tom/dev/python/minecraftserver crapper/out.txt",
+		"/Users/Tom/dev/avr/opdracht week 2/A/sendSerial.c",
+		"/Users/Tom/Documents/Rozekrans Computer Service/belasting/receive_int/Makefile",
+		"/Users/Tom/Documents/Rozekrans Computer Service/belasting/receive_int/int_us1.c",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/DF88E835-03BE-4129-95E6-6D57266C630C/header.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/BFEB064E-8555-49F8-8DED-1574C9B2F51D/uren.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/54D4E387-022C-419A-A04B-790A894835B9/index.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/74A780EE-46BB-41E9-9621-07F0D4CEFCBB/Login.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/D17E97D1-23D9-45C0-80E4-B8753508B049/index.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/CB6DD264-0E1F-48DA-9680-DCD4FDD83425/header.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/D6DAC7DC-458F-4066-BE99-742F87194C00/klant.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/D9BAFFCD-F237-48EF-B4A7-61ED5A68E060/index.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/EA4C0AA3-6630-4358-AC64-17CDC132AAF0/index.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/AA1C4E42-D27E-47DF-9652-C32E94750221/index.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/F7C27DCD-632A-4BDF-996B-C12A9175C7E2/header.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/0C796AED-CFF7-4EAB-9897-6AEA4303CBE4/include.php",
+		"/Users/Tom/Downloads/php-login-minimal-master/views/not_logged_in.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/A5933D4A-941D-4A18-AD53-B2A2FFAC527F/index-sample.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/B8C371CE-0E92-4232-978E-9781E8841DE8/Login.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/7ED270DF-4BEF-472E-AC82-10E80600FE15/index.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/E740EACE-20A3-456A-BA51-25B96BBF42D9/index.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/028951B6-2B31-4B6B-B226-2BE80FD1ECF7/login.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/3D6038DA-51C1-4F1D-AFF3-1FAC7D37DB8A/index.php",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/14B42CE6-82C9-422C-B91E-EB5A55DB1464/db.php",
+		"/Users/Tom/Downloads/php-login-minimal-master/config/db.php",
+		"/Users/Tom/Downloads/php-login-minimal-master/_installation/02-create-and-fill-users-table.sql",
+		"/Users/Tom/Downloads/php-login-minimal-master/_installation/01-create-database.sql",
+		"/Users/Tom/Downloads/Telegram Desktop/project software/rp6slave/rp6.c",
+		"/Users/Tom/dev/avr/softwareprocject/atmega/latest/draadloos_test.c",
+		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/DCC88081-9E9C-4E50-AAED-873E489B8B6E/index.php",
+		"/Users/Tom/Downloads/Telegram Desktop/project software/rp6slave/blah2.c",
+		"/Users/Tom/Downloads/Telegram Desktop/project software/arduino code/draadloos_test.c",
+		"/Users/Tom/Desktop/c/cprog-16-1.c",
+		"/Volumes/Mac hd/tom/dev/c/cprog-13-18/src/cprog-13-18.c",
+		"/Volumes/Mac hd/tom/dev/c/cprog-12-2/src/cprog-12-2.c",
+		"/Volumes/Mac hd/tom/dev/c/cprog-11-2/src/cprog-11-2.c",
+		"/Volumes/Mac hd/tom/dev/c/cprog-11-1/src/cprog-11-1.c",
+		"/Volumes/Mac hd/tom/dev/c/cprog-9-3/src/cprog-9-3.c",
+		"/Users/Tom/Desktop/c/cprog-6-11.c",
+		"/Users/Tom/Desktop/c/cprog-7-11.c",
+		"/Users/Tom/Desktop/c/cprog-8-9.c",
+		"/Volumes/Mac hd/tom/dev/c/cprog-8-9/src/cprog-8-9.c",
+		"/Users/Tom/dev/c/cprog-8-9/src/cprog-8-9.c",
+		"/Users/Tom/dev/c++/cprog-2/src/cprog-7-11.c",
+		"/Users/Tom/dev/c++/cprog-1/src/cprog-6-11.c",
+		"/Users/Tom/dev/c++/cprog-1/src/cprog-1.c",
+		"/Users/Tom/Downloads/i2c_functie_impl/master/i2c_mst.c",
+		"/Users/Tom/Downloads/i2c_functie_impl/slave/i2c.c",
+		"/Users/Tom/dev/server tests/gpnochest/plugins/GriefPreventionData/config.yml",
+		"/Users/Tom/dev/server tests/gpnochest/permissions.yml",
+		"/Users/Tom/dev/server tests/gpnochest/plugins/UUIDProvider/config.yml",
+		"/Users/Tom/dev/server tests/gpnochest/plugins/GriefPreventionData/messages.yml",
+		"/Users/Tom/dev/server tests/gpnochest/eula.txt",
+		"/Users/Tom/dev/server tests/gpnochest/plugins/disabled/GriefPrevention.jar.disabled/plugin.yml",
+		"/Users/Tom/dev/server tests/gpnochest/spigot.yml",
+		"/Users/Tom/Downloads/ServerSideChunkLoader-0.2.5.jar/mcmod.info",
+		"/Users/Tom/Downloads/i2c/sl_vb/rp6aansluitingen.h",
+		"/Users/Tom/Downloads/Telegram Desktop/blah2.c",
+		"/Users/Tom/Downloads/i2c/sl_vb/rp6.c",
+		"/Users/Tom/Downloads/i2c/sl_vb/rp6sl123.hex",
+		"/Users/Tom/dev/avr/softwareprocject/rp6/latest/blah2.c",
+		"/Users/Tom/Desktop/adfasdf.txt",
+		"/Users/Tom/Desktop/adfasdf",
+		"/Volumes/Mac hd/tom/dev/avr/softwareprocject/atmega/latest/draadloos_test.c",
+		"/Volumes/Mac hd/tom/Downloads/i2c (1)/sl_vb/rp6.c",
+		"/Volumes/Mac hd/tom/dev/avr/softwareprocject/atmega/compas/compasturning.c",
+		"/Volumes/Mac hd/tom/Downloads/RP6Examples_20120725f/RP6Lib/RP6base/RP6RobotBase.h",
+		"/Volumes/Mac hd/tom/Downloads/RP6Examples_20120725f/RP6Lib/RP6base/RP6RobotBaseLib.c",
+		"/Volumes/Mac hd/tom/Downloads/i2c (1)/ms_vb/i2c_mst.h",
+		"/Volumes/Mac hd/tom/dev/avr/softwareprocject/rp6/blah2.c",
+		"/Volumes/Mac hd/tom/dev/avr/softwareprocject/atmega/xbee/stuff.c",
+		"/Volumes/Mac hd/tom/Downloads/Telegram Desktop/draadloos_test.c",
+		"/Volumes/Mac hd/tom/dev/avr/softwareprocject/atmega/ing/Ultrasoonsensor.c",
+		"/Volumes/Mac hd/tom/dev/avr/softwareprocject/atmega/tomping/tomsping.c",
+		"/Volumes/Mac hd/tom/dev/avr/softwareprocject/atmega/tomping/Makefile",
+		"/Volumes/Mac hd/tom/dev/avr/softwareprocject/atmega/compas2/megamaster.c",
+		"/Volumes/Mac hd/tom/dev/avr/softwareprocject/rp6/Makefile",
+		"/Volumes/Mac hd/tom/dev/avr/softwareprocject/rp6/xbee/stuff.c",
+		"/Volumes/Mac hd/tom/Downloads/i2c_functie_impl/slave/i2c.c",
+		"/Volumes/Mac hd/tom/dev/avr/softwareprocject/rp6/bumpers.c",
+		"/Volumes/Mac hd/tom/Downloads/i2c (1)/sl_vb/rp6aansluitingen.h",
+		"/Volumes/Mac hd/tom/Downloads/i2c (1)/sl_vb/i2c.h",
+		"/Volumes/Mac hd/tom/Downloads/Telegram Desktop/Ultrasoonsensor2 (7).c",
+		"/Volumes/Mac hd/tom/dev/avr/softwareprocject/atmega/ing/Ultrasoonsensor2 (2).c",
+		"/Volumes/Mac hd/tom/Downloads/Telegram Desktop/Ultrasoonsensor2.c",
+		"/Volumes/Mac hd/tom/Downloads/Telegram Desktop/Ultrasoonsensor2 (5).c",
+		"/Volumes/Mac hd/tom/Downloads/Telegram Desktop/Ultrasoonsensor2 (6).c",
+		"/Volumes/Mac hd/tom/Downloads/i2c (1)/ms_vb/Makefile",
+		"/Volumes/Mac hd/tom/Downloads/i2c (1)/ms_vb/megamaster.c",
+		"/Volumes/Mac hd/tom/Downloads/RP6Examples_20120725f/RP6Lib/RP6control/RP6ControlLib.c",
+		"/Volumes/Mac hd/tom/Downloads/RP6Examples_20120725f/RP6BASE_EXAMPLES/Example_04_ACS/RP6Base_ACS.c",
+		"/Volumes/Mac hd/tom/Downloads/RP6Examples_20120725f/RP6BASE_EXAMPLES/Example_03_Stopwatches/RP6Base_Stopwatches.c",
+		"/Volumes/Mac hd/tom/Downloads/RP6Examples_20120725f/RP6CONTROL_EXAMPLES/Example_09_Move/RP6Control_09_Move.c"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"selection",
+			"",
+			"<current file>",
+			"selection",
+			"currentfile",
+			"",
+			"currentfile",
+			"selection",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"updatescreen",
+			"console",
+			"consol",
+			"console",
+			"emit",
+			"getp2",
+			"getp1",
+			"startb",
+			");\n",
+			"que",
+			"margin",
+			"left",
+			"player",
+			"ghost",
+			"down",
+			"run",
+			"leftdown",
+			"start",
+			"click to start",
+			"	\"",
+			"init_i2c_ont",
+			"data[]",
+			"data",
+			"i2cdata",
+			"ic2data",
+			"data_ont",
+			"data_flag",
+			"ontvangdata",
+			"speedR",
+			"bumper_timer",
+			"var",
+			"speed",
+			"i",
+			"block",
+			"map.blocks",
+			"ctx",
+			"socket",
+			"localhost",
+			"controler",
+			"k-1)",
+			"\"../",
+			"code.j",
+			"\"../",
+			"../",
+			"-or-",
+			"outside",
+			"update",
+			"init",
+			"\\n",
+			" ",
+			"delay_ping",
+			"US",
+			"US_PIN",
+			"isencoder",
+			"nop",
+			"bumper_timer",
+			"bumper",
+			"enable",
+			"timer 0",
+			"timer0",
+			"timer1",
+			"15:",
+			"1518",
+			"bumper_timer",
+			"led3",
+			"datacache",
+			"data",
+			"datacache",
+			"data",
+			"datacache",
+			"mybb_data",
+			"usergroup_permissions",
+			"XPCREATE",
+			"XPINSERT",
+			"wire",
+			"message",
+			"square",
+			"motor_R",
+			"oc1a",
+			"pwm",
+			"move",
+			"move(",
+			"move",
+			"mright_power",
+			"task_motionControl",
+			"mright_power",
+			"MOTIONCONTROL_sta",
+			"setmotorDir",
+			"task_",
+			"motorspeedcon",
+			"moveat",
+			"move",
+			"avr",
+			"get_staff",
+			"perms",
+			"user",
+			"userhasperms",
+			"whoaim",
+			"dashboard",
+			"reset",
+			"mail",
+			"server_conn",
+			"list",
+			"players",
+			"server_eval",
+			"\"stop\"",
+			"pi",
+			"home",
+			"remove",
+			"delete",
+			"img",
+			"revert",
+			"callback",
+			"types",
+			"addinput",
+			"data",
+			"cont",
+			"contains",
+			"domelement",
+			"startgame",
+			"1",
+			"updateghost",
+			"showinfo",
+			"update",
+			"ghost",
+			"ghost	",
+			"ghost",
+			"shift"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"/",
+			"/",
+			",",
+			"PING",
+			"PING_PIN",
+			"CREATE",
+			"INSERT",
+			"0",
+			"var animation_pac_1 = this.animation_pac_1  = new Animation(playerImage, CELL_SIZE, CELL_SIZE,domElement_pac_1);\n				animation_pac_1.offsetY = 32;\n				animation_pac_1.offsetX = 96;\n				animation_pac_1.looping = true;\n				animation_pac_1.play();\n				var domElement_pac_1 = animation_pac_1.domElement;\n				//player = new Player(CELL_SIZE, CELL_SIZE, playerImage); \n				charcontainer.appendChild(animation_pac_1.domElement);\n				animation_pac_1.update();\n				// ghost\n				var animation_ghost_1 = this.animation_ghost_1 = new Animation(ghostImage, CELL_SIZE, CELL_SIZE,domElement_ghost_1);\n				animation_ghost_1.offsetY = 32;\n				animation_ghost_1.offsetX = 128;\n				animation_ghost_1.looping = true;\n				animation_ghost_1.play();\n				var domElement_ghost_1 = animation_ghost_1.domElement;\n				charcontainer.appendChild(animation_ghost_1.domElement);\n				\n				animation_ghost_1.update();\n				animation_ghost_1.render();\n				animation_pac_1.render();",
+			"100",
+			"bk_wp5",
+			"bk_wp4",
+			"bk_wp1",
+			"bk_wp2",
+			" ",
+			"",
+			" ",
+			"",
+			"\n\nfunction changstatus(t, id) {\n    Lists[selList].getitems()[id].setstatus(t.checked);\n    displayItems(selList);\n}\n\nfunction editIName(t, id) {\n    html = \"<input type='text' onblur = 'editINameF(this,\"+id+\")' name='input' value='\"+Lists[selList].getitems()[id].getname()+\"'>\";\n    //t.innerHTML = \"tset\";\n    t.innerHTML = html;\n    t.setAttribute(\"onclick\",\"\");\n}\n\nfunction editINameF(t, id) {\n    name = t.value;\n    Lists[selList].getitems()[id].setname(name);\n    displayItems();\n}\n\nfunction editIColor(t, id) {\n    html = \"<select onchange='editIColorF(this,\"+id+\")'><option>color</option><option value='0' >0</option><option value='1' >1</option><option value='2' >2</option></select>\";\n    //html = \"<input type='text' onblur = 'editNameF(this,\"+id+\")' name='input' value='\"+Lists[id].getname()+\"'>\";\n    //t.innerHTML = \"tset\";\n    t.innerHTML = html;\n    t.setAttribute(\"onclick\",\"\");\n}\n\nfunction editIColorF(t,id) {\n    name = t.value;\n    Lists[selList].getitems()[id].setcolor(name);\n    displayItems();\n}\n\nfunction editIDline(t, id) {\n    html = \"<input type='text' onblur = 'editIDlineF(this,\"+id+\")' name='input' value='\"+Lists[selList].getitems()[id].getdeadline()+\"'>\";\n    //t.innerHTML = \"tset\";\n    t.innerHTML = html;\n    t.setAttribute(\"onclick\",\"\");\n}\n\nfunction editIDlineF(t, id) {\n    name = t.value;\n    Lists[selList].getitems()[id].setdeadline(name);\n    displayItems();\n}\n\nfunction editIImp(t, id) {\n    html = \"<select onchange='editIImpF(this,\"+id+\")'><option>color</option><option value='0' >0</option><option value='1' >1</option><option value='2' >2</option></select>\";\n    //html = \"<input type='text' onblur = 'editNameF(this,\"+id+\")' name='input' value='\"+Lists[id].getname()+\"'>\";\n    //t.innerHTML = \"tset\";\n    t.innerHTML = html;\n    t.setAttribute(\"onclick\",\"\");\n}\n\nfunction editIImpF(t,id) {\n    name = t.value;\n    Lists[selList].getitems()[id].setpriority(name);\n    displayItems();\n}\n\nfunction deleteItem(id) {\n    Lists[selList].getitems().splice(id,1);\n    displayItems();\n}\n\nfunction editLName(t) {\n    id = t.parentNode.getAttribute(\"id\");\n    html = \"<input type='text' onblur = 'editLNameF(this,\"+id+\")' name='input' value='\"+Lists[id].getname()+\"'>\";\n    //t.innerHTML = \"tset\";\n    t.innerHTML = html;\n    t.setAttribute(\"onclick\",\"\");\n\n}\n\nfunction editLNameF (t,id) {\n    name = t.value;\n    Lists[id].setname(name);\n    displayLists();\n}\n\n\nfunction editLColor(t) {\n    id = t.parentNode.getAttribute(\"id\");\n    html = \"<select onchange='editLColorF(this,\"+id+\")'><option>color</option><option value='0' >0</option><option value='1' >1</option><option value='2' >2</option></select>\";\n    //html = \"<input type='text' onblur = 'editNameF(this,\"+id+\")' name='input' value='\"+Lists[id].getname()+\"'>\";\n    //t.innerHTML = \"tset\";\n    t.innerHTML = html;\n    t.setAttribute(\"onclick\",\"\");\n\n}\n\nfunction editLColorF(t,id) {\n    name = t.value;\n    Lists[id].setcolor(name);\n    displayLists();",
+			"console.log(item);\n}\n\nfunction changstatus(t, id) {\n    Lists[selList].getitems()[id].setstatus(t.checked);\n    displayItems(selList);\n}\n\nfunction editIName(t, id) {\n    html = \"<input type='text' onblur = 'editINameF(this,\"+id+\")' name='input' value='\"+Lists[selList].getitems()[id].getname()+\"'>\";\n    //t.innerHTML = \"tset\";\n    t.innerHTML = html;\n    t.setAttribute(\"onclick\",\"\");\n}\n\nfunction editINameF(t, id) {\n    name = t.value;\n    Lists[selList].getitems()[id].setname(name);\n    displayItems();\n}\n\nfunction editIColor(t, id) {\n    html = \"<select onchange='editIColorF(this,\"+id+\")'><option>color</option><option value='0' >0</option><option value='1' >1</option><option value='2' >2</option></select>\";\n    //html = \"<input type='text' onblur = 'editNameF(this,\"+id+\")' name='input' value='\"+Lists[id].getname()+\"'>\";\n    //t.innerHTML = \"tset\";\n    t.innerHTML = html;\n    t.setAttribute(\"onclick\",\"\");\n}\n\nfunction editIColorF(t,id) {\n    name = t.value;\n    Lists[selList].getitems()[id].setcolor(name);\n    displayItems();\n}\n\nfunction editIDline(t, id) {\n    html = \"<input type='text' onblur = 'editIDlineF(this,\"+id+\")' name='input' value='\"+Lists[selList].getitems()[id].getdeadline()+\"'>\";\n    //t.innerHTML = \"tset\";\n    t.innerHTML = html;\n    t.setAttribute(\"onclick\",\"\");\n}\n\nfunction editIDlineF(t, id) {\n    name = t.value;\n    Lists[selList].getitems()[id].setdeadline(name);\n    displayItems();\n}\n\nfunction editIImp(t, id) {\n    html = \"<select onchange='editIImpF(this,\"+id+\")'><option>color</option><option value='0' >0</option><option value='1' >1</option><option value='2' >2</option></select>\";\n    //html = \"<input type='text' onblur = 'editNameF(this,\"+id+\")' name='input' value='\"+Lists[id].getname()+\"'>\";\n    //t.innerHTML = \"tset\";\n    t.innerHTML = html;\n    t.setAttribute(\"onclick\",\"\");\n}\n\nfunction editIImpF(t,id) {\n    name = t.value;\n    Lists[selList].getitems()[id].setpriority(name);\n    displayItems();\n}\n\nfunction deleteItem(id) {\n    Lists[selList].getitems().splice(id,1);\n    displayItems();\n}\n\nfunction editLName(t) {\n    id = t.parentNode.getAttribute(\"id\");\n    html = \"<input type='text' onblur = 'editLNameF(this,\"+id+\")' name='input' value='\"+Lists[id].getname()+\"'>\";\n    //t.innerHTML = \"tset\";\n    t.innerHTML = html;\n    t.setAttribute(\"onclick\",\"\");\n\n}\n\nfunction editLNameF (t,id) {\n    name = t.value;\n    Lists[id].setname(name);\n    displayLists();\n}\n\n\nfunction editLColor(t) {\n    id = t.parentNode.getAttribute(\"id\");\n    html = \"<select onchange='editLColorF(this,\"+id+\")'><option>color</option><option value='0' >0</option><option value='1' >1</option><option value='2' >2</option></select>\";\n    //html = \"<input type='text' onblur = 'editNameF(this,\"+id+\")' name='input' value='\"+Lists[id].getname()+\"'>\";\n    //t.innerHTML = \"tset\";\n    t.innerHTML = html;\n    t.setAttribute(\"onclick\",\"\");\n\n}\n\nfunction editLColorF(t,id) {\n    name = t.value;\n    Lists[id].setcolor(name);\n    displayLists();",
+			"1",
+			"leeraar",
+			"'",
+			"onclick\n$currow = 1;\n$curcol = 1;\n$name = \"\";\n$vereneging = \"\";\n$datum = \"\";\n$lessoort = \"\";\n$lesGroep = \"\";\n$zaal = \"\";\n$tijd = \"\";\n$lesnummer = \"\";\n$lesmaand = \"\";\n$leiding = array();\n$lidlen = 0;\n$lidnr = 0;\n$curlidrow = 1;\n$lidnaam = \"\";\n$lidphone1 = \"\";\n$lidphone2 = \"\";\n$lidtoel = \"\";\n$lidgeb = \"\";",
+			"$newlist = true;\n$currow = 1;\n$curcol = 1;\n$name = \"\";\n$vereneging = \"\";\n$datum = \"\";\n$lessoort = \"\";\n$lesGroep = \"\";\n$zaal = \"\";\n$tijd = \"\";\n$lesnummer = \"\";\n$lesmaand = \"\";\n$leiding = array();\n$lidlen = 0;\n$lidnr = 0;\n$curlidrow = 1;\n$lidnaam = \"\";\n$lidphone1 = \"\";\n$lidphone2 = \"\";\n$lidtoel = \"\";\n$lidgeb = \"\";",
+			" ",
+			");",
+			");\\npulseIR(",
+			");\\rpulseIR(",
+			");\\npulseIR(",
+			"pulseIR("
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7329,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4713,
+								4713
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2384.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "static/tilt.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								531,
+								732
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_name": "tilt.html",
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "static/screen/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18934,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18475,
+								18475
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10510.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "views/client.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7264,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5213,
+								5213
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2437.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "static/control/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1672,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								745,
+								745
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 29.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "client/playlist.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1107,
+								1116
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 820.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "static/screen/js/Ghost.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2097,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								425,
+								425
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1312.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 261.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 112.0
+	},
+	"pinned_build_system": "Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+	"project": "pacman-server.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"untitled"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 584.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 204.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+	<script src="https://www.promisejs.org/polyfills/promise-7.0.4.min.js"></script>
+	<script type="text/javascript" src="js/gyronorm.min.js"></script>
+	<script type="text/javascript" src="js/fulltilt.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="control/style.css">
+
+</head>
+<body>
+	<div class="container">
+		<div id="left" class="arrow-left"></div>
+		<div id="right" class="arrow-right"></div>
+		<div id="up" class="arrow-up"></div>
+		<div id="down" class="arrow-down"></div>
+	</div>
+	
+	
+
+<script type="text/javascript">
+	var args = {
+    frequency:50,                   // ( How often the object sends the values - milliseconds )
+    gravityNormalized:true,         // ( If the garvity related values to be normalized )
+    orientationBase:GyroNorm.GAME,      // ( Can be GyroNorm.GAME or GyroNorm.WORLD. gn.GAME returns orientation values with respect to the head direction of the device. gn.WORLD returns the orientation values with respect to the actual north direction of the world. )
+    decimalCount:2,                 // ( How many digits after the decimal point will there be in the return values )
+    logger:null,                    // ( Function to be called to log messages from gyronorm.js )
+    screenAdjusted:false            // ( If set to true it will return screen adjusted values. )
+};
+
+
+    var gn = new GyroNorm();
+
+    gn.init(args).then(function(){
+        gn.start(function(data){
+         	getdir(data);
+
+         
+        });
+    }).catch(function(e){
+    	alert("you suck");
+    });
+
+
+    function getdir(data) {
+    	// data.do.alpha    ( deviceorientation event alpha value )
+     //    data.do.beta     ( deviceorientation event beta value )
+     //    data.do.gamma    ( deviceorientation event gamma value )
+     //    beta is onder
+     //    gamma is rechts
+     //    
+        if(data.do.gamma > 10 && data.do.gamma > Math.abs(data.do.beta)){
+    		console.log("right");
+    		$("#right").addClass("activeright");
+    		$("#left").removeClass("activeleft");
+    		$("#up").removeClass("activeup");
+    		$("#down").removeClass("activedown");
+
+        }else if(data.do.gamma < -10 && Math.abs(data.do.gamma) > Math.abs(data.do.beta)){
+        	console.log("left");
+        	$("#right").removeClass("activeright");
+    		$("#left").addClass("activeleft");
+    		$("#up").removeClass("activeup");
+    		$("#down").removeClass("activedown");
+        }else if(data.do.beta > 10 && data.do.beta > Math.abs(data.do.gamma)){
+        	console.log("down");
+        	$("#right").removeClass("activeright");
+    		$("#left").removeClass("activeleft");
+    		$("#up").removeClass("activeup");
+    		$("#down").addClass("activedown");
+        }else if(data.do.beta < -10 && Math.abs(data.do.beta) > Math.abs(data.do.gamma)){
+        	console.log("up");
+        	$("#right").removeClass("activeright");
+    		$("#left").removeClass("activeleft");
+    		$("#up").addClass("activeup");
+    		$("#down").removeClass("activedown");
+        }
+
+
+    	// console.log("alpha: " + data.do.alpha);
+    	// console.log("beta: " + data.do.beta);
+    	// console.log("gamma: "+ data.do.gamma)
+    	
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+	<link rel="stylesheet" type="text/css" href="control/style.css">
+	<title>Pacman controller</title>
+</head>
+<body>
+	<div class="container" id="arrow">
+		<div id="left" class="arrow-left"></div>
+		<div id="right" class="arrow-right"></div>
+		<div id="up" class="arrow-up"></div>
+		<div id="down" class="arrow-down"></div>
+	</div>
+	<div class="container" id="wait">
+		<p class="name">you are number <span id="numb">x</span> in the queue</p>
+	</div>
+
+	<div class="container" id="divname">
+		<p class="name">
+		Username:
+		<input type="text" name="name" id="name" placeholder="Username">
+		<button onclick="sendname()">send</button>
+		</p>
+	</div>
+	<div class="container" id="choose">
+		<p class="top" onclick="joystick()">Use touch controls</p>
+		<p class="bottom" onclick="tilt()">Use tilt controls<br/><span class="small">(requires rotationlock)</span></p>
+	</div>
+	<button onclick="test()" id="startb">Start</button>
+	<div id="js"></div>
+</body>
+<script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="control/joystick.js"></script>
+<script src="https://www.promisejs.org/polyfills/promise-7.0.4.min.js"></script>
+<script type="text/javascript" src="js/gyronorm.min.js"></script>
+<script type="text/javascript" src="js/fulltilt.min.js"></script>
+<script type="text/javascript">
+	var args = {
+	    frequency:50,                   // ( How often the object sends the values - milliseconds )
+	    gravityNormalized:true,         // ( If the garvity related values to be normalized )
+	    orientationBase:GyroNorm.GAME,      // ( Can be GyroNorm.GAME or GyroNorm.WORLD. gn.GAME returns orientation values with respect to the head direction of the device. gn.WORLD returns the orientation values with respect to the actual north direction of the world. )
+	    decimalCount:2,                 // ( How many digits after the decimal point will there be in the return values )
+	    logger:null,                    // ( Function to be called to log messages from gyronorm.js )
+	    screenAdjusted:false            // ( If set to true it will return screen adjusted values. )
+	};
+
+	var gn = new GyroNorm();
+
+	var code = "<%=code%>";
+	var place = "<%=place%>";
+	var p1name = "<%=p1name%>";
+	var p2name = "<%=p2name%>";
+	var connected = false;
+	setCookie('pac_id',code,1);
+	console.log(place);
+	//window.location.assign('http://localhost:8080/control');
+
+	
+
+	function getCookie(cname) {
+	    var name = cname + "=";
+	    var ca = document.cookie.split(';');
+	    for(var i=0; i<ca.length; i++) {
+	        var c = ca[i];
+	        while (c.charAt(0)==' ') c = c.substring(1);
+	        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+	    }
+	    return "";
+	}
+
+	function setCookie(cname, cvalue, exdays) {
+	    var d = new Date();
+	    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+	    var expires = "expires="+d.toUTCString();
+	    document.cookie = cname + "=" + cvalue + "; " + expires;
+	}
+	var cookie = getCookie('pac_id');
+  	var socket = io(window.location.host+'/control');
+
+	function test(){
+		console.log("testing");
+		socket.emit('control', { pac_id: cookie, dir: 'st' });
+	}
+	function sendname() {
+		if(!connected){
+			alert("no socket conection try again");
+			return;
+		}
+
+		socket.emit('name',{pac_id: cookie, name:$("#name").val()});
+		console.log($("#name").val());
+		$('#divname').hide();
+		$('#wait').show();
+	}
+
+	function joystick(){
+		$("#choose").hide();
+		var joystick = new VirtualJoystick({
+							container	: document.getElementById('js'),
+    						mouseSupport: true,
+							stationaryBase: true,
+							baseX: screen.width/2,
+							baseY: screen.height/2,
+							// limitStickTravel: true,
+							// stickRadius: Math.min(screen.width/2, screen.height/2)-10
+                   });
+		setInterval(function(){
+					if( joystick.right() ){
+						socket.emit('control', { pac_id: cookie, dir: 'r'});   
+					}else
+					if( joystick.left() ){
+						socket.emit('control', { pac_id: cookie, dir: 'l'});   
+					}else
+					if( joystick.up() ){
+						socket.emit('control', { pac_id: cookie, dir: 'u'});           
+					}else
+					if( joystick.down() ){
+						socket.emit('control', { pac_id: cookie, dir: 'd'}); 
+					}else{
+						socket.emit('control', {pac_id: cookie, dir: 'n'})
+					}
+				}, 1/30 * 1000);
+	}
+
+	socket.on( 'connect', function () {
+    	socket.emit('handshake', { pac_id: cookie });
+    	connected = true;
+
+	} );
+
+
+	function tilt() {
+		$("#arrow").show();
+		$("#choose").hide();
+		$("#startb").show();
+		gn.init(args).then(function(){
+	        gn.start(function(data){
+	         	getdir(data);
+
+	         
+	        });
+	    }).catch(function(e){
+	    	alert("you suck");
+	    });
+	}
+
+	socket.on('queue', function (msg) {
+		if(msg == 0 && $("#wait").is(":visible")){
+
+			$("#choose").show();
+			$("#wait").hide();
+		}
+		$('#numb').html(msg);
+		
+	});
+
+	socket.on('end', function (msg) {
+		window.location.href = "http://stackoverflow.com";
+		
+	});
+
+	$(document).ready(function(){
+		$("#choose").hide();
+		$("#startb").hide();
+		$("#wait").hide();
+		$("#arrow").hide();
+	});
+
+
+	function getdir(data) {
+    	// data.do.alpha    ( deviceorientation event alpha value )
+     //    data.do.beta     ( deviceorientation event beta value )
+     //    data.do.gamma    ( deviceorientation event gamma value )
+     //    beta is onder
+     //    gamma is rechts
+     //    
+        if(data.do.gamma > 10 && data.do.gamma > Math.abs(data.do.beta)){
+    		socket.emit('control', { pac_id: cookie, dir: 'r'});
+    		$("#right").addClass("activeright");
+    		$("#left").removeClass("activeleft");
+    		$("#up").removeClass("activeup");
+    		$("#down").removeClass("activedown");
+
+        }else if(data.do.gamma < -10 && Math.abs(data.do.gamma) > Math.abs(data.do.beta)){
+        	socket.emit('control', { pac_id: cookie, dir: 'l'}); 
+        	$("#right").removeClass("activeright");
+    		$("#left").addClass("activeleft");
+    		$("#up").removeClass("activeup");
+    		$("#down").removeClass("activedown");
+        }else if(data.do.beta > 10 && data.do.beta > Math.abs(data.do.gamma)){
+        	socket.emit('control', { pac_id: cookie, dir: 'd'}); 
+        	$("#right").removeClass("activeright");
+    		$("#left").removeClass("activeleft");
+    		$("#up").removeClass("activeup");
+    		$("#down").addClass("activedown");
+        }else if(data.do.beta < -10 && Math.abs(data.do.beta) > Math.abs(data.do.gamma)){
+        	socket.emit('control', { pac_id: cookie, dir: 'u'});
+        	$("#right").removeClass("activeright");
+    		$("#left").removeClass("activeleft");
+    		$("#up").addClass("activeup");
+    		$("#down").removeClass("activedown");
+        }else{
+        	socket.emit('control', {pac_id: cookie, dir: 'n'});
+        	$("#right").removeClass("activeright");
+    		$("#left").removeClass("activeleft");
+    		$("#up").removeClass("activeup");
+    		$("#down").removeClass("activedown");
+        }
+
+
+    	// console.log("alpha: " + data.do.alpha);
+    	// console.log("beta: " + data.do.beta);
+    	// console.log("gamma: "+ data.do.gamma)
+    	
+    }
+
+
+</script>
+</html>
