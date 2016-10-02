@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="control/style.css">
 	<title>Pacman controller</title>
 </head>
-<body>
+<body onunload="">
 	<div class="container" id="arrow">
 		<div id="left" class="arrow-left"></div>
 		<div id="right" class="arrow-right"></div>
@@ -27,8 +27,12 @@
 		<p class="top" onclick="joystick()">Use touch controls</p>
 		<p class="bottom" onclick="tilt()">Use tilt controls<br/><span class="small">(requires rotationlock)</span></p>
 	</div>
-	<button onclick="test()" id="startb">Start</button>
-	<div id="js"></div>
+	all<div id="js"></div>
+	<div class="container" id="start">
+		<p class="center" onclick="start()">Start</p>
+	</div>
+	<!-- <button onclick="start()" id="startb">Start</button> -->
+	<input type='hidden' value='no' id='reload'>
 </body>
 <script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -50,12 +54,25 @@
 
 	var code = "<%=code%>";
 	var place = "<%=place%>";
-	var p1name = "<%=p1name%>";
-	var p2name = "<%=p2name%>";
+	var name = <%=name%>;
 	var connected = false;
+	delete_cookie('pac_id');
 	setCookie('pac_id',code,1);
 	console.log(place);
 	//window.location.assign('http://localhost:8080/control');
+
+
+
+
+	$(window).bind("pageshow", function(event) {
+	    if (event.originalEvent.persisted) {
+	        window.location.reload() 
+	    }
+	});
+
+
+
+
 
 	
 
@@ -76,17 +93,23 @@
 	    var expires = "expires="+d.toUTCString();
 	    document.cookie = cname + "=" + cvalue + "; " + expires;
 	}
-	var cookie = getCookie('pac_id');
-  	var socket = io(window.location.host+'/control');
 
-	function test(){
+	function delete_cookie(name){
+    	document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+	}
+
+	var cookie = getCookie('pac_id');
+  	var socket;
+
+	function start(){
 		console.log("testing");
+		$('#start').hide();
 		socket.emit('control', { pac_id: cookie, dir: 'st' });
 	}
+
 	function sendname() {
 		if(!connected){
-			alert("no socket conection try again");
-			return;
+			connect();
 		}
 
 		socket.emit('name',{pac_id: cookie, name:$("#name").val()});
@@ -95,8 +118,32 @@
 		$('#wait').show();
 	}
 
+	function connect(){
+		socket = io(window.location.host+'/control');
+		socket.on( 'connect', function () {
+    		socket.emit('handshake', { pac_id: code });
+    		connected = true;
+		} );
+
+		socket.on('queue', function (msg) {
+			if(msg == 0 && $("#wait").is(":visible")){
+
+				$("#choose").show();
+				$("#wait").hide();
+			}
+			$('#numb').html(msg);
+		});
+
+		socket.on('end', function (msg) {
+			window.location.href = "http://stackoverflow.com";
+			
+		});
+
+	}
+
 	function joystick(){
 		$("#choose").hide();
+		$("#start").show();
 		var joystick = new VirtualJoystick({
 							container	: document.getElementById('js'),
     						mouseSupport: true,
@@ -124,17 +171,19 @@
 				}, 1/30 * 1000);
 	}
 
-	socket.on( 'connect', function () {
-    	socket.emit('handshake', { pac_id: cookie });
-    	connected = true;
 
-	} );
+	function checkpagereload(){
+		var input = $('#reload');
+		input.val() == 'yes' ? location.reload(true) : input.val('yes');
+	}
+
+
 
 
 	function tilt() {
 		$("#arrow").show();
 		$("#choose").hide();
-		$("#startb").show();
+		$("#start").show();
 		gn.init(args).then(function(){
 	        gn.start(function(data){
 	         	getdir(data);
@@ -146,26 +195,24 @@
 	    });
 	}
 
-	socket.on('queue', function (msg) {
-		if(msg == 0 && $("#wait").is(":visible")){
-
-			$("#choose").show();
-			$("#wait").hide();
-		}
-		$('#numb').html(msg);
-		
-	});
-
-	socket.on('end', function (msg) {
-		window.location.href = "http://stackoverflow.com";
-		
-	});
-
+	
 	$(document).ready(function(){
 		$("#choose").hide();
 		$("#startb").hide();
 		$("#wait").hide();
 		$("#arrow").hide();
+		$("#start").hide();
+		
+
+		if(name == "1"){
+			$('#divname').hide();
+			$('#wait').show();
+			connect();
+		}
+
+
+		checkpagereload();
+
 	});
 
 

@@ -49,6 +49,7 @@ screenn.on('connection', function(socket){
   }
   socket.on('screen',function(msg){
     logger.log('debug', msg['status']);
+    updatescreen();
   });
 
   socket.on('newgame',function(msg){
@@ -78,7 +79,7 @@ control.on('connection', function(socket){
       playerlist.setPlayerSocket(pac_id,socket);
       playerlist.reconnect(pac_id);
     }else{
-      playerlist.createPlayer(pac_id, socket, "player");
+      playerlist.createPlayer(pac_id, socket, "Player");
       
     }
     updatescreen();
@@ -99,10 +100,10 @@ control.on('connection', function(socket){
     // logger.log('debug', "control player:" + msg["pac_id"] + " action:" + msg["dir"])
     //screensocket.emit('control','s');
 
-    if(playerlist.isplayer1(msg['pac_id'])){
+    if(playerlist.isPlayer1(msg['pac_id'])){
       screensocket.emit('pcontrol',msg['dir']);
       // logger.log('debug', "sending p1 command");
-    }else if(playerlist.isplayer2(msg['pac_id'])){
+    }else if(playerlist.isPlayer2(msg['pac_id'])){
       screensocket.emit('gcontrol',msg['dir'])
     }
     // var p = playlist.getPlayerByPac_id(msg[pac_id]);
@@ -155,27 +156,38 @@ io.on('connection', function(socket){
   });
 });
 
+app.use(function(req, res, next) {
+  res.header('Cache-Control', 'no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0'); 
+  next(); 
+});
+
 //on http request for /connect
 app.get('/connect',function(req, res) {
+
+    logger.log('debug',"on connect at index.js: Global http connect ")
 
     //todo: add code to allow reconecting
     if(playerlist.isPlayer(req.cookies['pac_id'])){//queue.indexOf(req.cookies['pac_id']) !== -1){
         playerlist.reconnect(req.cookies['pac_id']);
         logger.log('debug',"on coonect at index.js: client reconnected after disconect " + req.cookies['pac_id']);
       //var pos = queue.indexOf(req.cookies['pac_id']);
-      var name = false;
-      if(playlist.isPlayer1(req.cookies['pac_id']) && playlist.getp1Name() != "Null"){
-        name = true;
-      }else if(playlist.isPlayer2(req.cookies['pac_id']) && playlist.getp2Name() != "Null"){
-        name = true;
+      var name = 0;
+      if(playerlist.isPlayer1(req.cookies['pac_id']) && playerlist.getp1Name() != "Player"){
+        name = 1;
+        logger.log('debug',"on connect at index.js: name is known as player1");
+      }else if(playerlist.isPlayer2(req.cookies['pac_id']) && playerlist.getp2Name() != "Player"){
+        name = 1;
+        logger.log('debug',"on connect at index.js: name is known as player2")
       }
 
-      res.render('client', { code: req.cookies['pac_id'], place:0, name: playlist.is });
+      res.render('client', { code: req.cookies['pac_id'], place:0, name: name });
     }else{
       var cod = gensecret();
       //queue.push(cod);
       //var pos = queue.indexOf(cod);
-      res.render('client', { code: cod, place:0, name: false});
+      logger.log('debug',"on connect at index.js: First http request");
+
+      res.render('client', { code: cod, place:0, name: 0});
     }
     updatescreen();
     
@@ -271,11 +283,6 @@ function updatescreen() {
       tplayers[key].socket.emit('queue',playerlist.getQuePos(tplayers[key].pac_id));
       logger.log('debug','sending player data to' + tplayers[key].pac_id);
   }
-
-  
-
-
-
 }
 
 

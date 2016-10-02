@@ -77,6 +77,15 @@
 					pli += "<li>"+msg['pqueue'][i]+"</li>";
 				}
 				document.getElementById('leftinfoul').innerHTML =pli;
+
+
+				
+				document.getElementById("cghostpac").innerHTML = msg['gname'];
+				var pli = "";
+				for (var i = msg['gqueue'].length - 1; i >= 0; i--) {
+					pli += "<li>"+msg['gqueue'][i]+"</li>";
+				}
+				document.getElementById('rightinfoul').innerHTML =pli;
 			});
 			
 			var playerImage = assetImages["player"] = new Image();
@@ -112,7 +121,7 @@
 				leftinfoul = document.createElement("ul");
 				leftinfoul.id = "leftinfoul";
 				leftinfo.appendChild(leftinfoul);
-				leftinfoul.innerHTML = "<li>testing</li><li>testing</li><li>testing</li><li>testing</li><li>testing</li><li>testing</li>";
+				// leftinfoul.innerHTML = "<li>testing</li><li>testing</li><li>testing</li><li>testing</li><li>testing</li><li>testing</li>";
 
 
 
@@ -122,11 +131,18 @@
 				rightinfo.style.float = "right";
 				document.body.appendChild(rightinfo);
 				k = document.createElement("H2");
-				k.innerHTML = "pacman que";
+				m = document.createElement("div");
+				k.innerHTML = "Currently playing:</br>";
 				rightinfo.appendChild(k);
+				m.id = "cghostpac";
+				rightinfo.appendChild(m);
+				q = document.createElement("H2");
+				q.innerHTML = "pacman que";
+				rightinfo.appendChild(q);
 				rightinfoul = document.createElement("ul");
+				rightinfoul.id = "rightinfoul";
 				rightinfo.appendChild(rightinfoul);
-				rightinfoul.innerHTML = "<li>testing</li><li>testing</li><li>testing</li><li>testing</li><li>testing</li><li>testing</li>";
+				// rightinfoul.innerHTML = "<li>testing</li><li>testing</li><li>testing</li><li>testing</li><li>testing</li><li>testing</li>";
 
 				// CANVAS SET UP
 				container = document.createElement("div");

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ba",
+				"background-color"
+			],
+			[
 				"getp",
 				"getp1Name"
 			],
@@ -57,7 +61,7 @@
 			],
 			[
 				"pr",
-				"proto	Prototype"
+				"proto\tPrototype"
 			],
 			[
 				"connec",
@@ -141,7 +145,7 @@
 			],
 			[
 				"for",
-				"foreach	foreach …"
+				"foreach\tforeach …"
 			],
 			[
 				"var",
@@ -229,11 +233,11 @@
 			],
 			[
 				"t",
-				"type	Attr"
+				"type\tAttr"
 			],
 			[
 				"echo",
-				"echo	echo \"…\""
+				"echo\techo \"…\""
 			],
 			[
 				"ar",
@@ -261,7 +265,7 @@
 			],
 			[
 				"di",
-				"div	Tag"
+				"div\tTag"
 			],
 			[
 				"va",
@@ -289,7 +293,7 @@
 			],
 			[
 				"de",
-				"def	Function"
+				"def\tFunction"
 			],
 			[
 				"par",
@@ -305,7 +309,7 @@
 			],
 			[
 				"if",
-				"if	if …"
+				"if\tif …"
 			],
 			[
 				"qu",
@@ -497,11 +501,11 @@
 			],
 			[
 				"ac",
-				"action	Attr"
+				"action\tAttr"
 			],
 			[
 				"h",
-				"h3	Tag"
+				"h3\tTag"
 			],
 			[
 				"lin",
@@ -510,10 +514,6 @@
 			[
 				"wd",
 				"width"
-			],
-			[
-				"wid",
-				"width: 〔property〕"
 			]
 		]
 	},
@@ -523,24 +523,17 @@
 			"file": "index.js",
 			"settings":
 			{
-				"buffer_size": 7329,
+				"buffer_size": 7808,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "static/tilt.html",
-			"settings":
-			{
-				"buffer_size": 3390,
-				"line_ending": "Unix",
-				"name": "tilt.html"
 			}
 		},
 		{
 			"file": "static/screen/index.html",
 			"settings":
 			{
-				"buffer_size": 18934,
+				"buffer_size": 19442,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -548,7 +541,8 @@
 			"file": "views/client.ejs",
 			"settings":
 			{
-				"buffer_size": 7264,
+				"buffer_size": 7987,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -556,7 +550,8 @@
 			"file": "static/control/style.css",
 			"settings":
 			{
-				"buffer_size": 1672,
+				"buffer_size": 1739,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -564,7 +559,17 @@
 			"file": "client/playlist.js",
 			"settings":
 			{
-				"buffer_size": 5229,
+				"buffer_size": 5233,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/player.js",
+			"settings":
+			{
+				"buffer_size": 124,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -700,13 +705,14 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Tom/Dropbox/pacman-server",
-		"/Users/Tom/Dropbox/pacman-server/static",
-		"/Users/Tom/Dropbox/pacman-server/static/control",
-		"/Users/Tom/Dropbox/pacman-server/views"
+		"/D/Users/Tom/Documents/dev/Multiplayer-pacman/pacman-server",
+		"/D/Users/Tom/Documents/dev/Multiplayer-pacman/pacman-server/client",
+		"/D/Users/Tom/Documents/dev/Multiplayer-pacman/pacman-server/server"
 	],
 	"file_history":
 	[
+		"/D/Users/Tom/Documents/dev/Multiplayer-pacman/pacman-server/static/tilt.html",
+		"/C/Program Files (x86)/Steam/steamapps/common/Supreme Commander Forged Alliance/gamedata/02_sorian_ai_pack.scd",
 		"/Users/Tom/Library/Caches/Cleanup At Startup/Transmit/E75211D7-7512-458F-B7A7-EC854D3ABE4B/index.php",
 		"/Users/Tom/Dropbox/pacman-server/client/player.js",
 		"/D/Users/Tom/Desktop/pacman-server/static/screen/css/pacman.css",
@@ -832,13 +838,11 @@
 		"/Volumes/Mac hd/tom/Downloads/i2c (1)/ms_vb/Makefile",
 		"/Volumes/Mac hd/tom/Downloads/i2c (1)/ms_vb/megamaster.c",
 		"/Volumes/Mac hd/tom/Downloads/RP6Examples_20120725f/RP6Lib/RP6control/RP6ControlLib.c",
-		"/Volumes/Mac hd/tom/Downloads/RP6Examples_20120725f/RP6BASE_EXAMPLES/Example_04_ACS/RP6Base_ACS.c",
-		"/Volumes/Mac hd/tom/Downloads/RP6Examples_20120725f/RP6BASE_EXAMPLES/Example_03_Stopwatches/RP6Base_Stopwatches.c",
-		"/Volumes/Mac hd/tom/Downloads/RP6Examples_20120725f/RP6CONTROL_EXAMPLES/Example_09_Move/RP6Control_09_Move.c"
+		"/Volumes/Mac hd/tom/Downloads/RP6Examples_20120725f/RP6BASE_EXAMPLES/Example_04_ACS/RP6Base_ACS.c"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -861,6 +865,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"null",
+			"\"player\"",
+			"player",
+			"isplayer2",
+			"isplaye2",
+			"isplayer2",
+			"isplayer1",
+			"p1name",
 			"updatescreen",
 			"console",
 			"consol",
@@ -880,7 +892,7 @@
 			"leftdown",
 			"start",
 			"click to start",
-			"	\"",
+			"\t\"",
 			"init_i2c_ont",
 			"data[]",
 			"data",
@@ -980,15 +992,7 @@
 			"cont",
 			"contains",
 			"domelement",
-			"startgame",
-			"1",
-			"updateghost",
-			"showinfo",
-			"update",
-			"ghost",
-			"ghost	",
-			"ghost",
-			"shift"
+			"startgame"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1004,7 +1008,7 @@
 			"CREATE",
 			"INSERT",
 			"0",
-			"var animation_pac_1 = this.animation_pac_1  = new Animation(playerImage, CELL_SIZE, CELL_SIZE,domElement_pac_1);\n				animation_pac_1.offsetY = 32;\n				animation_pac_1.offsetX = 96;\n				animation_pac_1.looping = true;\n				animation_pac_1.play();\n				var domElement_pac_1 = animation_pac_1.domElement;\n				//player = new Player(CELL_SIZE, CELL_SIZE, playerImage); \n				charcontainer.appendChild(animation_pac_1.domElement);\n				animation_pac_1.update();\n				// ghost\n				var animation_ghost_1 = this.animation_ghost_1 = new Animation(ghostImage, CELL_SIZE, CELL_SIZE,domElement_ghost_1);\n				animation_ghost_1.offsetY = 32;\n				animation_ghost_1.offsetX = 128;\n				animation_ghost_1.looping = true;\n				animation_ghost_1.play();\n				var domElement_ghost_1 = animation_ghost_1.domElement;\n				charcontainer.appendChild(animation_ghost_1.domElement);\n				\n				animation_ghost_1.update();\n				animation_ghost_1.render();\n				animation_pac_1.render();",
+			"var animation_pac_1 = this.animation_pac_1  = new Animation(playerImage, CELL_SIZE, CELL_SIZE,domElement_pac_1);\n\t\t\t\tanimation_pac_1.offsetY = 32;\n\t\t\t\tanimation_pac_1.offsetX = 96;\n\t\t\t\tanimation_pac_1.looping = true;\n\t\t\t\tanimation_pac_1.play();\n\t\t\t\tvar domElement_pac_1 = animation_pac_1.domElement;\n\t\t\t\t//player = new Player(CELL_SIZE, CELL_SIZE, playerImage); \n\t\t\t\tcharcontainer.appendChild(animation_pac_1.domElement);\n\t\t\t\tanimation_pac_1.update();\n\t\t\t\t// ghost\n\t\t\t\tvar animation_ghost_1 = this.animation_ghost_1 = new Animation(ghostImage, CELL_SIZE, CELL_SIZE,domElement_ghost_1);\n\t\t\t\tanimation_ghost_1.offsetY = 32;\n\t\t\t\tanimation_ghost_1.offsetX = 128;\n\t\t\t\tanimation_ghost_1.looping = true;\n\t\t\t\tanimation_ghost_1.play();\n\t\t\t\tvar domElement_ghost_1 = animation_ghost_1.domElement;\n\t\t\t\tcharcontainer.appendChild(animation_ghost_1.domElement);\n\t\t\t\t\n\t\t\t\tanimation_ghost_1.update();\n\t\t\t\tanimation_ghost_1.render();\n\t\t\t\tanimation_pac_1.render();",
 			"100",
 			"bk_wp5",
 			"bk_wp4",
@@ -1037,7 +1041,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1046,15 +1050,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7329,
+						"buffer_size": 7808,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4713,
-								4713
+								3836,
+								3836
 							]
 						],
 						"settings":
@@ -1065,40 +1069,38 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2384.0,
+						"translation.y": 2160.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "static/tilt.html",
+					"file": "static/screen/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3390,
+						"buffer_size": 19442,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								531,
-								732
+								4211,
+								4211
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"auto_name": "tilt.html",
 							"is_xml": false,
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 855.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -1106,50 +1108,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "static/screen/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 18934,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18475,
-								18475
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"is_xml": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 10510.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "views/client.ejs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7264,
+						"buffer_size": 7987,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5213,
-								5213
+								2738,
+								2738
 							]
 						],
 						"settings":
@@ -1159,27 +1130,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2437.0,
+						"translation.y": 315.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "static/control/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1672,
+						"buffer_size": 1739,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								745,
-								745
+								379,
+								379
 							]
 						],
 						"settings":
@@ -1189,27 +1160,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 29.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "client/playlist.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5229,
+						"buffer_size": 5233,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1107,
-								1116
+								910,
+								913
 							]
 						],
 						"settings":
@@ -1219,10 +1190,38 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 820.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "client/player.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1248,7 +1247,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1312.0,
+						"translation.y": 814.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,

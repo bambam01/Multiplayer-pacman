@@ -55,14 +55,14 @@ playlist.prototype.setPlayerSocket = function(pac_id,socket) {
 
 playlist.prototype.getp1Name = function() {
 	if(this.player1 == ""){
-		return "Null";
+		return "Player";
 	}
 	return this.players[this.player1].name;
 };
 
 playlist.prototype.getp2Name = function() {
 	if(this.player2 == ""){
-		return "Null";
+		return "Player";
 	}
 	return this.players[this.player2].name;
 };
@@ -183,12 +183,12 @@ playlist.prototype.getgque = function() {
 	return this.gqueue;
 };
 
-playlist.prototype.isplayer1 = function(pac_id) {
+playlist.prototype.isPlayer1 = function(pac_id) {
 	// logger.log('debug',"cheking for p1:" + pac_id+"=="+this.player1['pac_id']);
 	return pac_id == this.player1;
 };
 
-playlist.prototype.isplayer2 = function(pac_id) {
+playlist.prototype.isPlayer2 = function(pac_id) {
 	return pac_id == this.player2;
 };
 
