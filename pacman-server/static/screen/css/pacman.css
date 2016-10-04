@@ -36,6 +36,10 @@ div
 	font-size: 20px;
 }
 
+#cghostpac{
+	font-size: 20px;
+}
+
 ul
 {
 	list-style-type: decimal;
@@ -112,18 +116,51 @@ ul
 	zoom: 1.5;
 }
 
-#score
-{
-	cursor: pointer;
-	font-size: 14px;
-	height: 14px;
-	overflow: hidden;
-	padding: 0px;
-	position: relative;
-	margin: 0px; 
-	margin: auto;
-	margin-top: 5px;
-	text-align: center;
+#score {
+    cursor: pointer;
+    font-size: 20px;
+    /* height: 14px; */
+    overflow: hidden;
+    padding-right: 5px;
+    position: relative;
+    margin: 0px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    float: right;
+}
+
+
+#qr {
+    cursor: pointer;
+    font-size: 20px;
+    /* height: 14px; */
+    overflow: hidden;
+    padding-right: 5px;
+    position: relative;
+    margin: 0px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+#qr > canvas {
+	 border: 5px solid white;
+}
+
+#scorer {
+    cursor: pointer;
+    font-size: 20px;
+    /* height: 14px; */
+    overflow: hidden;
+    padding-right: 5px;
+    position: relative;
+    margin: 0px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    float: right;
 }
 
 #info

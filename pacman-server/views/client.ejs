@@ -17,11 +17,14 @@
 	</div>
 
 	<div class="container" id="divname">
-		<p class="name">
-		Username:
-		<input type="text" name="name" id="name" placeholder="Username">
-		<button onclick="sendname()">send</button>
-		</p>
+		<form id="name">
+			<p class="name">
+				Username:
+
+				<input type="text" name="name" id="Uname" placeholder="Username">
+				<input type="submit" value="Send">
+			</p>
+		</form>
 	</div>
 	<div class="container" id="choose">
 		<p class="top" onclick="joystick()">Use touch controls</p>
@@ -107,15 +110,27 @@
 		socket.emit('control', { pac_id: cookie, dir: 'st' });
 	}
 
-	function sendname() {
-		if(!connected){
+	$('#name').submit(function(ev) {
+   		 ev.preventDefault(); 
+	    if(!connected){
 			connect();
 		}
 
-		socket.emit('name',{pac_id: cookie, name:$("#name").val()});
-		console.log($("#name").val());
+		socket.emit('name',{pac_id: cookie, name:$("#Uname").val()});
+		console.log($("#Uname").val());
 		$('#divname').hide();
 		$('#wait').show();
+	});
+
+	function sendname() {
+		// if(!connected){
+		// 	connect();
+		// }
+
+		// socket.emit('name',{pac_id: cookie, name:$("#name").val()});
+		// console.log($("#name").val());
+		// $('#divname').hide();
+		// $('#wait').show();
 	}
 
 	function connect(){

@@ -24,6 +24,7 @@
 		<script src="js/Level.js"></script>
 		<script src="js/Pip.js"></script>
 		<script src="js/Player.js"></script>
+		<script src="js/qrcode.js"></script>
 		
 		<!-- SCRIPT BODY --> 
 		<script> 
@@ -64,7 +65,11 @@
 				pleftDown, prightDown, pupDown, pdownDown,
 			// preload image resources
 				assetImages = {},
-				p1done =false, p2done = false;
+				p1done =false, p2done = false,
+
+				p1name, p2name,
+
+				isPause = false;
 
 			var socket = io(window.location.host+'/screen');
 			console.log(socket.emit('screen', {status:"screen loaded"}));
@@ -72,6 +77,7 @@
 
 			socket.on('info',function(msg) {
 				document.getElementById("cplaypac").innerHTML = msg['pname'];
+				p1name = msg['pname'];
 				var pli = "";
 				for (var i = msg['pqueue'].length - 1; i >= 0; i--) {
 					pli += "<li>"+msg['pqueue'][i]+"</li>";
@@ -81,6 +87,7 @@
 
 				
 				document.getElementById("cghostpac").innerHTML = msg['gname'];
+				p2name = msg['gname'];
 				var pli = "";
 				for (var i = msg['gqueue'].length - 1; i >= 0; i--) {
 					pli += "<li>"+msg['gqueue'][i]+"</li>";
@@ -112,7 +119,10 @@
 				l = document.createElement("H2");
 				p = document.createElement("div");
 				l.innerHTML = "Currently playing:</br>";
-				leftinfo.appendChild(l)
+				leftinfo.appendChild(l);
+				scoreContainer = document.createElement('span');
+				scoreContainer.id = "score";
+				leftinfo.appendChild(scoreContainer);
 				p.id="cplaypac";
 				leftinfo.appendChild(p);
 				k = document.createElement("H2");
@@ -134,6 +144,9 @@
 				m = document.createElement("div");
 				k.innerHTML = "Currently playing:</br>";
 				rightinfo.appendChild(k);
+				scoreContainer = document.createElement('span');
+				scoreContainer.id = "scorer";
+				rightinfo.appendChild(scoreContainer);
 				m.id = "cghostpac";
 				rightinfo.appendChild(m);
 				q = document.createElement("H2");
@@ -189,11 +202,9 @@
 				info.className = "info";
 				info.style.width = '100%';
 				container.appendChild(info);
-				
-				scoreContainer = document.createElement('div');
-				scoreContainer.id = "score";
-				scoreContainer.style.width = SCREEN_WIDTH + 'px';
-				document.body.appendChild(scoreContainer);
+				qr = document.createElement('div');
+				qr.id="qr"
+				document.body.appendChild(qr);
 				
 				player.init();
 				ghost.init();
@@ -205,6 +216,7 @@
 				}
 				
 				showInfo("<p>PRESS START ON THE CONTROLER TO START</p>");
+				$('#qr').qrcode("http://" + window.location.host + "/connect");
 			}
 			
 			function run()
@@ -226,6 +238,8 @@
 					update();
 				}
 				render();
+
+
 			}
 			
 			function update()
@@ -252,7 +266,8 @@
 						level.pips[cx][cy].munch();
 						level.cellData[cx][cy] = 2;
 						++score;
-						document.getElementById("score").innerHTML = "SCORE: " + score;
+						document.getElementById("score").innerHTML = "Score: " + score;
+						document.getElementById("scorer").innerHTML = "Score: " + (106-score);
 						if(score == level.totalPips)
 						{
 							onGameOver(true);
@@ -414,11 +429,12 @@
 				var str;
 				if(complete)
 				{
-					str = "<h1>YOU WIN!</h1><p> PRESS START ON THE CONTROLER TO PLAY AGAIN</p>";
+					str = "<h1>" + p1name+ " WINS</h1><p> PRESS START ON THE CONTROLER TO START A NEW GAME</p>";
 				}
 				else
 				{
-					str = "<h1>GAME<br>OVER</h1><p>PRESS START ON THE CONTROLER TO RESTART</p>";
+					str = "<h1>" + p2name+ " WINS</h1><p> PRESS START ON THE CONTROLER TO START A NEW GAME</p>";
+
 				}
 				
 				showInfo(str);
@@ -643,9 +659,10 @@
 			
 			function startGame()
 			{
-				if(isPlaying) return;
+				if(isPlaying || isPause) return;
 				isPlaying = true;
-				document.getElementById("score").innerHTML = "SCORE: " + score;
+				document.getElementById("score").innerHTML = "Score: " + score;
+				document.getElementById("scorer").innerHTML = "Score: " + (106-score);
 				resetGame();
 				gameInterval = setInterval(run, 1);
 			}
@@ -654,7 +671,12 @@
 			{
 				socket.emit('newgame',{});
 				isPlaying = false;
+				isPause = true;
 				clearInterval(gameInterval);
+			}
+
+			function reclame(){
+				
 			}
 		</script>
 		
