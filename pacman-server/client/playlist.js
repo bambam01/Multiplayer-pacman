@@ -148,7 +148,9 @@ playlist.prototype.updatecur = function() {
 	if(this.player1 == ""){
 		if(this.pqueue.length > 0){
 			logger.log('debug',"updatecur at playerlist.js: set player1");
-			this.player1 = this.pqueue.shift();
+			var k = this.pqueue.shift();
+			console.log(k);
+			this.player1 = k;
 		}
 	}
 	if(this.player2 == ""){
@@ -162,9 +164,6 @@ playlist.prototype.updatecur = function() {
 playlist.prototype.nextgame = function() {
 	this.deletePlayerByPac_id(this.player1);
 	this.deletePlayerByPac_id(this.player2);
-	this.player1 = "";
-	this.player2 = "";
-	this.updatecur();
 };
 
 playlist.prototype.getPl1 = function(){

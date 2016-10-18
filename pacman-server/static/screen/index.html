@@ -216,7 +216,7 @@
 				}
 				
 				showInfo("<p>PRESS START ON THE CONTROLER TO START</p>");
-				$('#qr').qrcode("http://" + window.location.host + "/connect");
+				$('#qr').qrcode("http://" + window.location.host);
 			}
 			
 			function run()
@@ -659,7 +659,7 @@
 			
 			function startGame()
 			{
-				if(isPlaying || isPause) return;
+				if(isPlaying) return;
 				isPlaying = true;
 				document.getElementById("score").innerHTML = "Score: " + score;
 				document.getElementById("scorer").innerHTML = "Score: " + (106-score);
@@ -671,13 +671,11 @@
 			{
 				socket.emit('newgame',{});
 				isPlaying = false;
-				isPause = true;
+				
 				clearInterval(gameInterval);
 			}
 
-			function reclame(){
-				
-			}
+			
 		</script>
 		
 		<!-- <script>

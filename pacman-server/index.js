@@ -194,8 +194,15 @@ app.get('/connect',function(req, res) {
     
 });
 
+
 //server static pagess
+
 app.use('/', express.static(__dirname + '/static'));
+
+
+app.all('*', function(req, res) {
+  res.redirect("/connect");
+});
 
 //tools
 

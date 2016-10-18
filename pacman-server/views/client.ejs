@@ -55,7 +55,7 @@
 
 	var gn = new GyroNorm();
 
-	var code = "<%=code%>";
+	var code = "<%=code%>"; 
 	var place = "<%=place%>";
 	var name = <%=name%>;
 	var connected = false;
@@ -163,8 +163,8 @@
 							container	: document.getElementById('js'),
     						mouseSupport: true,
 							stationaryBase: true,
-							baseX: screen.width/2,
-							baseY: screen.height/2,
+							baseX: window.innerWidth/2,
+							baseY: window.innerHeight/2,
 							// limitStickTravel: true,
 							// stickRadius: Math.min(screen.width/2, screen.height/2)-10
                    });
